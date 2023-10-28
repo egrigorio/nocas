@@ -1,30 +1,29 @@
 import { useState } from 'react'
-
+import { Fragment } from 'react'
+import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 
 function Home() {
     return (
     <div>
-        <h1>Clique para adicionar ao contador</h1>
-        <Contador />
+        <Header />
+        
     </div>
     )
 }
 
-function Contador(){
-    const [contador, setContador] = useState(1)
-
-    function addContador(){
-        setContador(contador + 1)
-    }
-
-
+function Header(){
     return (
-        <div>
-            <div>{contador}</div>
-            <button onClick={addContador}>Adicionar</button>
+        <div className=''>
+            <ul>
+                <li>Home</li>
+                <li>Sobre</li>
+                <li>Contacto</li>
+            </ul>
         </div>
     )
-    }
+}
+
 
 export default Home
