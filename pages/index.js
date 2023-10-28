@@ -17,10 +17,10 @@ import {
     Maximize2,
     
   } from "lucide-react";
-  import { Sidebar } from "../spotify-rosa/src/app/components/Sidebar";
+  import { Sidebar } from "../components/Sidebar";
   import Image from "next/image";
-  import { Footer } from "../spotify-rosa/src/app/components/Footer";
-  import { MainContent } from "../spotify-rosa/src/app/components/MainContent";
+  import { Footer } from "../components/Footer";
+  import { MainContent } from "../components/MainContent";
   
   export default function Home() {
     return (
