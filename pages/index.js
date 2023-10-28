@@ -1,29 +1,37 @@
-import { useState } from 'react'
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-
-
-function Home() {
+import {
+    Home as HomeIcon,
+    Search,
+    Library,
+    ChevronLeft,
+    ChevronRight,
+    Shuffle,
+    SkipBack,
+    SkipForward,
+    Repeat,
+    Play,
+    Mic2,
+    LayoutList,
+    Laptop2,
+    Volume,
+    Maximize,
+    Maximize2,
+    
+  } from "lucide-react";
+  import { Sidebar } from "../spotify-rosa/src/app/components/Sidebar";
+  import Image from "next/image";
+  import { Footer } from "../spotify-rosa/src/app/components/Footer";
+  import { MainContent } from "../spotify-rosa/src/app/components/MainContent";
+  
+  export default function Home() {
     return (
-    <div>
-        <Header />
-        
-    </div>
-    )
-}
-
-function Header(){
-    return (
-        <div className=''>
-            <ul>
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Contacto</li>
-            </ul>
+      <div className="h-screen flex flex-col">
+        <div className="flex flex-1">
+          <Sidebar />
+          <MainContent />
         </div>
-    )
-}
-
-
-export default Home
+  
+        <Footer />
+      </div>
+    );
+  }
+  
